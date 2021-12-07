@@ -1,0 +1,157 @@
+body {
+    font-family: 'Fira Sans',sans-serif;
+    -webkit-font-smoothing: antialiased;
+    margin: 0;
+    background-color:rgba(var(--cWhiteTwo),1);;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.content{
+  padding-top:10px;
+
+}
+ .nav-responsive{
+    display:flex;
+    width:100%;
+} 
+div {
+    display: block;
+}
+.logo{
+        border: 0;
+        position:relative;
+        left:50%;
+}
+.access{
+  float:right;
+  position: relative;
+  top:5px;
+left:85%;
+top:20px;
+}
+#cart{
+    position: relative;
+    }
+    .fa-shopping-cart{
+      height:40px;
+      width:40px;
+     font-size: 200%;
+    }
+#map{
+    position:relative;
+}
+
+  /* Float four columns side by side */
+  .column {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+  }
+  
+  /* Remove extra left and right margins, due to padding */
+  .row {margin: 0px 160px;
+  
+        }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive columns */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+  
+  /* Style the counter cards */
+  .Header{
+    color: #FFFFFF;
+    font-weight: 700;
+    background:#6E8E4B;
+    text-align: center;
+    padding: 10px 3px;
+    list-style-type: none;
+    overflow: hidden;
+  
+  }
+  ul{
+    border-radius:20px;
+    margin-left: 32%;
+  }
+  li {
+    float: left;
+    display: block;
+  
+  }
+  li a {
+    display: block;
+    padding: 8px 14px;
+    background-color: #2c3040;
+    color: #FFFFFF;
+    text-decoration: none;
+  }
+  li .last{
+  border-bottom-right-radius: 25px;
+  border-top-right-radius: 25px;
+  }
+  li .first{
+  border-bottom-left-radius: 25px;
+  border-top-left-radius: 25px;
+  }
+  a:focus{
+    color: #000000;
+    background-color:#FFFFFF;
+    border-radius: 25px;
+  }
+  .card {
+  color: #000000;
+  font-family: sans-serif;
+  background: #FFFFFF;
+  margin: 10px 0px 22px;
+  padding: 31px 15px 15px;
+  border-radius:25px; 
+  }
+  .title_item{
+    text-align: left;
+  }
+  .strike{
+        color:#6b6e73;
+        text-decoration-line:line-through;
+            font-weight: 500;
+            font-size: 14px;
+  }
+  .Btn_Cart{
+    background-color: #6E8E4B;
+    color: #FFFFFF;
+    border: none;
+    padding: 7px 7px;
+    width: 100%;
+    border-radius: 19px;
+    cursor: pointer;
+  }
+  
+.top-left {
+    position: relative;
+    font-size: 12px;
+    font-weight: 500;
+    bottom:12px;
+    left: -14px;
+    color: #FFFFFF;
+    margin-right:70%; 
+    padding: 2px 5px;
+    background:#10b507;
+  }
+  
+  .my-float {
+      margin-top: 16px;
+      }
