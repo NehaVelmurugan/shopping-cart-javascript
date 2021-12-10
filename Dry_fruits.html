@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gourment Garden kart</title>
+</head>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+<!-- custom stylesheet -->
+<link rel="stylesheet" href="/Style.CSS">
+<!-- font awesome icon -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<body  onload="loded()"><!--navigation-->
+    <nav>
+        <div class="nav-responsive">
+          <!--side logo -->
+            <img src="/logo/logo-Bengaluru_small.png" alt="image" class="logo" id="logo">
+            <h1 class="heading" >Gourment Garden</h1>
+            <div class="access">
+              <!--side logo-->
+                <a href="#" id="cart"><i class="fa fa-shopping-cart fa-2x"></i></a>
+                <a href="#" id="map"><i class="fa fa-map-marker fa-2x"></i></a>
+            </div>
+        </div>      
+    </nav><!--header-->
+    <div class="Header">
+        <h2>Freshly Cut</h2>
+         </div><!--list of items in unorder-->
+         <ul class="content">
+           <!--collection of items-->
+          <li><a class="first" href="ALL">ALL</a></li>
+         <li><a href="Vegitables.html">VEGETABLES</a></li> 
+         <li><a href="Leafy_greens.html">LEAFY GREENS</a></li>
+         <li><a href="Freshlycut.html">FRESHLY CUT</a></li>
+         <li><a class="last" href="Dry_fruits.html">DRY FRUITS</a></li>
+       </ul>
+         <div class="container">
+
+         </div>
+          <script type="text/javascript">
+            let vegetables=[
+    {
+      "category":"Organic",
+      "image":"cashewclassic",
+      "title":"cashewclassic" ,
+      "old-price":"300",
+      "new-price":"400",
+      "quantity":"100grms"
+    },
+    {
+        "category":"Organic",
+      "image":"Classic Almond-California",
+      "title":"Classic Almond-California" ,
+      "old-price":"200",
+      "new-price":"350",
+      "quantity":"100grms"
+    },
+    {
+        "category":"Organic",
+      "image":"pumpkinseeds",
+      "title":"Pumpkinseed" ,
+      "old-price":"100",
+      "new-price":"120",
+      "quantity":"50grms"
+    },
+    {
+        "category":"Organic",
+      "image":"raisinsblack",
+      "title":"raisinsblack" ,
+      "old-price":"40",
+      "new-price":"50",
+      "quantity":"200grms"
+    },
+    {
+      "category":"Organic",
+    "image":"Super Premium Walnuts -California ",
+    "title":"greenpeaspeeled" ,
+    "old-price":"60",
+    "new-price":"30",
+    "quantity":"50grms"
+  },
+  
+  ]
+  
+ function loded()
+    {
+    
+      vegetables.forEach((obj,index)=>{
+        console.log(obj);
+  
+         
+        let html= `
+        <div id="${index}" class="p-2 col-xl-3 col-lg-3 col-md-4 col-sm-6 col-xs-12" >
+        <div class="card">
+                  <div class="box-content" >
+                  <div class="top-left">Organic</div>
+            <center>  <img class="img" src="./Dry Fruits/${obj.image}.jpg" height="80px" width="130px"></center>
+                 <p style="display:"inline",float:"left"">${obj.title}</p>
+                 <table class="table table-borderless ">
+                 <tr>
+                 <td style="text-align:"right;"">  <p style="text-align:end;"><span class="strike" style="text-align:"right;"">₹${obj["old-price"]}</span></p></td>
+                 <td> <p  ><strong>₹${obj["new-price"]}</strong></p></td>
+                 </tr>
+                 </table>
+               
+                 
+                 <p  style="display:"inline",text-align:"left";">${obj.quantity}</p>
+                 <button class="Btn_Cart" onclick=Cliq()>Add To Cart</button>
+                 </div>
+                 </div>
+              </div>`
+           document.querySelector('.container').insertAdjacentHTML('afterbegin', html);
+
+   
+      })
+    }
+   
+              function Cliq(){
+                  alert("Item Added to Cart Successfully!!");
+              }
+          </script>
+
+</body>
