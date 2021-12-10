@@ -76,12 +76,12 @@ let vegetables=[
          
         let html= `
         <div id="${index}" class="p-2 col-xl-3 col-lg-4 col-md-4 col-sm-6 col-xs-12">
-        <div class="card">/* Tile for each item*/
-                  <div class="box-content p-2">/* Displays the Description of each item*/
+        <div class="card">
+                  <div class="box-content p-2">
                   <div class="top-left">Organic</div>
             <center>  <img class="img" src="./images1/${obj.image}.jpg" height="80px" width="110px"></center> /*displays image*/
                  <p style="display:"inline",float:"left"">${obj.title}</p>
-                 <table class="table table-borderless ">/* Defnition of table */
+                 <table class="table table-borderless ">
                  <tr>
                  <td style="text-align:"right;"">  <p style="text-align:end;"><span class="strike" style="text-align:"right;"">₹${obj["old-price"]}</span></p></td>
                  <td> <p  ><strong>₹${obj["new-price"]}</strong></p></td>
@@ -89,7 +89,7 @@ let vegetables=[
                  </table>
                
                  
-                 <p  style="display:"inline",text-align:"left";">${obj.quantity}</p>/* displays quantity */
+                 <p  style="display:"inline",text-align:"left";">${obj.quantity}</p>
                  <button class="Btn_Cart" onclick=Cliq()>Add To Cart</button>
                  </div>
                  </div>
