@@ -188,7 +188,7 @@ body {
         display: flex;
         /* flex-direction: column;
         margin: 5px; */
-        align-items: center;  
+        align-items: center; 
         justify-content: center; 
         text-align: center;
         /* justify-content: flex-end;  */
@@ -208,4 +208,30 @@ body {
         width: 100%;
         /* transition: 300ms all; */
       }
+
+
+/* add to cartdiv*/
+
+#post_addToCardDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: none;
+    padding: 7px 7px;
+    width: 100%;
+    border-radius: 19px;
+    cursor: pointer;
+}
+/* added plus minus buttons */
+.plus_minus_btn {
+    background-color: #6E8E4B;
+    color: #FFFFFF;
+    display: flex;
+    width: 20%;
+    border-radius: 50%;
+    align-content: center;
+    justify-content: center;
+}
+
+
       
