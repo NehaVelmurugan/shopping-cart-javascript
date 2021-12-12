@@ -103,7 +103,7 @@ function loded()
                 </div>
                 </div>
              </div>`
-         /*added plus minus btn*/
+         /* /*added plus minus btn*/
           document.querySelector('.container').insertAdjacentHTML('afterbegin', html);
 
   
@@ -112,13 +112,16 @@ function loded()
     document.querySelectorAll(".plus_minus_btn").forEach((item) => {
         item.addEventListener('click', event => {
             var targetedButton = event.target.id;
-            
+            /* displaying numbers in cart */ 
             
             if (targetedButton.charAt(0) == "+") {
                 var itemC = document.getElementById(targetedButton).previousElementSibling;
                 itemCount = itemC.innerHTML;
                 itemCount++;
                 itemC.innerHTML = itemCount;
+                console.log(itemCount);
+                document.getElementById("retr").innerHTML=itemCount;
+
             }
             else {
                 
@@ -129,9 +132,11 @@ function loded()
                     document.getElementById(targetedButton).parentElement.style.display = "none";
                     document.getElementById(targetedButton).parentElement.previousElementSibling.style.display = "block";
                 }
-
                 itemC.innerHTML = itemCount;
-               
+                console.log(itemCount);
+                document.getElementById("retr").innerHTML=itemCount;
+                
+
             }
             
 
@@ -151,6 +156,11 @@ function loded()
             itemCount = itemC.innerHTML;
             itemCount++;
             itemC.innerHTML = itemCount;
+            console.log(1);
+            document.getElementById("retr").innerHTML=1;
+
+
+            
         })
     })
     
