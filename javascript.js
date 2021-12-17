@@ -1,4 +1,5 @@
-﻿let Gourment = {
+﻿
+let Gourment = {
     vegetables :[
         /* Defining Arrays named vegetables*/
         {
@@ -100,7 +101,7 @@
         {
             "category": "Organic",
             "image": "curry Leavs",
-            "title": "Broclii",
+            "title": "curry Leavs",
             "old-price": "20",
             "new-price": "40",
             "quantity": "100grms",
@@ -260,7 +261,7 @@ function loded(opt)
                 </table>    
                 <p  style="display:"inline",text-align:"left";">${obj.quantity}</p>
                                       
-                           <button class="Btn_Cart" id="Btn-${index}">Add To Cart</button>
+                           <button class="Btn_Cart" id="Btn-${index}" >Add To Cart</button>
                            <div id="post_addToCardDiv" style="display:none;">
                                <div id="-${index}" class="plus_minus_btn">-</div>
                                <div id="{itemCount-${index}}">0</div>
@@ -284,13 +285,13 @@ function loded(opt)
                 itemC.innerHTML = itemCount;
                 console.log(itemCount);
                 console.log(typeof(itemCount));
-                document.getElementById("checkoutCart").innerHTML = ++cartCount;
+                // document.getElementById("checkoutCart").innerHTML = ++cartCount;
           //increse count when we add element to cart and push if it is not persent in the selected list,,,,,, if item is already present in selected array then increase count           
                 Gourment[opt][targetedButton.charAt(1)].count = Gourment[opt][targetedButton.charAt(1)].count + 1;
                 // console.log(Gourment);
                 if (selecedItems.some(elem => elem.title === Gourment[opt][targetedButton.charAt(1)].title)) {
                  selecedItems = selecedItems.filter(function( obj ) {
-  return obj.title !== Gourment[opt][targetedButton.charAt(1)].title;
+                return obj.title !== Gourment[opt][targetedButton.charAt(1)].title;
                  });
                     selecedItems.push(Gourment[opt][targetedButton.charAt(1)])
                     console.log(selecedItems);
@@ -313,7 +314,9 @@ function loded(opt)
                 itemC.innerHTML = itemCount;
                 // console.log(itemCount);
                 // console.log(typeof(itemCount));
+                if(itemCount==0){
                 document.getElementById("checkoutCart").innerHTML = --cartCount;
+                }
                 //decrase the count in the gourment array and put the new obj with update count into selected items and if count is equal to zero remove the object from selected Items
                             Gourment[opt][targetedButton.charAt(1)].count = Gourment[opt][targetedButton.charAt(1)].count - 1;
              
@@ -348,7 +351,7 @@ function loded(opt)
             itemCount++;
             itemC.innerHTML = 0;
             // console.log(1);
-            document.getElementById("checkoutCart").innerHTML = cartCount;   
+            document.getElementById("checkoutCart").innerHTML = ++cartCount;   
             
 
             
