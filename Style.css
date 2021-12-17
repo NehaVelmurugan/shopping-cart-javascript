@@ -44,9 +44,9 @@ div {
   padding: 2px;
   text-align: center;
   font: 8px Arial, sans-serif;
-  position: relative;
+  position: absolute;
   bottom: 10px;
-  right: 17px;
+  right: 7px;
 }
 .access {
   float: right;
