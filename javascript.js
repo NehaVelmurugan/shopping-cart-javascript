@@ -79,7 +79,6 @@ let Gourment = {
 
     leafyGreen:[
         /* Defining Arrays named Leafy_green*/
-
         {
             "category": "Organic",
             "image": "Baby Butterhead lettuce",
