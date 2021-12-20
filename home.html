@@ -13,7 +13,7 @@
 <!-- font awesome icon -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<body onload="loded('vegetables')">
+<body onload="onLoad()">
   <!--navigation -->
   <nav>
     <div class="nav-responsive">
@@ -24,7 +24,6 @@
         <!--side logo-->
         <a href="Cart.html" id="cart"><i class="fa fa-shopping-cart fa-2x"></i><sup><span class="dot"
               id="checkoutCart">0</span></sup></a>
-        <a href="#" id="map"><i class="fa fa-map-marker fa-2x"></i></a>
       </div>
     </div>
    
@@ -40,7 +39,7 @@
       <!--collection of items-->
       <div style="display: flex;border-radius:20px;  background-color: #2c3040;flex-wrap: wrap;margin-top: 10px;">
     <!--collection of items-->
-    <li><a class="first" href="#all" onclick="loded('vegetables')">ALL</a></li>
+    <li><a class="first" href="#all" onclick="loded('vegetables')" >ALL</a></li>
     <li><a href="#vegetables" onclick="loded('vegetables')">VEGETABLES</a></li>
     <li><a href="#leafygreens" onclick="loded('leafyGreen')">LEAFY GREENS</a></li>
     <li><a href="#freshlycut" onclick="loded('freshlyCut')">FRESHLY CUT</a></li>
@@ -48,13 +47,12 @@
 
   </div>
   </div>
-  
   <div class="container">
-
-
-  </div>
+ </div>
   <script src="javascript.js" type="text/javascript" charset="utf-8"></script>
-  <script type="text/javascript">
+  <script type="text/javascript" src="items.json">
+  
+    
   </script>
 </body>
 
