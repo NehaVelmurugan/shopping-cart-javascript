@@ -1,5 +1,4 @@
-﻿
-let Gourment = {
+﻿let Gourment = {
     vegetables :[
         /* Defining Arrays named vegetables*/
         {
@@ -10,7 +9,7 @@ let Gourment = {
             "old-price": "80",
             "new-price": "60",
             "quantity": "500grms",
-           "count":0
+            "count":0
         },
         {
             "category": "Organic",
@@ -261,11 +260,12 @@ let Gourment = {
 let selecedItems=[]
 
 let itemCount = 0; 
-let cartCount=0;/*Keep Track of Cart_Count*/
+let cartCount=0;/Keep Track of Cart_Count/
+let cop_item=0;
 function loded(opt)
 
 {  
-    console.log(opt,Gourment[opt])
+        console.log(opt,Gourment[opt])
      document.querySelector('.container').innerHTML="";/* Clear the Screen Before proceeding to next Screen*/
      Gourment[opt].forEach((obj,index)=>{
        console.log(obj);
@@ -303,10 +303,9 @@ function loded(opt)
             if (targetedButton.charAt(0) == "+") {
                 var itemC = document.getElementById(targetedButton).previousElementSibling;
                 itemCount = itemC.innerHTML;
-                itemCount++;
+                cop_item=++itemCount;
+                // console.log(cop_item);
                 itemC.innerHTML = itemCount;
-                console.log(itemCount);
-                 console.log(typeof(itemCount));
           //increse count when we add element to cart and push if it is not persent in the selected list,,,,,, if item is already present in selected array then increase count           
                 Gourment[opt][targetedButton.charAt(1)].count = Gourment[opt][targetedButton.charAt(1)].count + 1;
                 if (selecedItems.some(elem => elem.title === Gourment[opt][targetedButton.charAt(1)].title)) {
@@ -332,6 +331,7 @@ function loded(opt)
                     document.getElementById(targetedButton).parentElement.previousElementSibling.style.display = "block";
                 }
                 itemC.innerHTML = itemCount;
+                cop_item=itemCount;
                 if(itemCount==0){
                 document.getElementById("checkoutCart").innerHTML = --cartCount;
                 }
@@ -355,26 +355,32 @@ function loded(opt)
                   }
         })
     })
-
     document.querySelectorAll(".Btn_Cart").forEach((item) => {
         item.addEventListener('click', event => {
             var targetedButton = event.target.id;
             var sibling = document.getElementById(targetedButton).nextElementSibling;
             sibling.style.display = 'flex';
-            
             document.getElementById(targetedButton).style.display = 'none';
-
             var itemC = document.getElementById(targetedButton).nextElementSibling.children[1];
             itemCount = itemC.innerHTML;
             itemCount++;
-            itemC.innerHTML = 0;
-            document.getElementById("checkoutCart").innerHTML = ++cartCount;   
+            itemC.innerHTML = 1;
+            document.getElementById("checkoutCart").innerHTML = ++cartCount; 
+            Gourment[opt][targetedButton.charAt(4)].count=Gourment[opt][targetedButton.charAt(4)].count+1;
+            if (selecedItems.some(elem => elem.title === Gourment[opt][targetedButton.charAt(4)].title)) {
+                
+             selecedItems = selecedItems.filter(function( obj ) {
+            return obj.title !== Gourment[opt][targetedButton.charAt(4)].title;
+             });
+                selecedItems.push(Gourment[opt][targetedButton.charAt(4)])
+                console.log(selecedItems);
+
+            } else {
+                selecedItems.push(Gourment[opt][targetedButton.charAt(4)])
+                console.log(selecedItems);
+          }
             
         })
     })
 
 };
-
-
-
-
