@@ -6,8 +6,8 @@
             "image": "Beans",
             "title": "Beans",
              "displayName":"beans",
-            "old_Price": "80",
-            "new_Price": "60",
+            "oldPrice": "80",
+            "newPrice": "60",
             "quantity": "500grms",
             "count":0
         },
@@ -16,8 +16,8 @@
             "image": "Brinjal",
             "title": "Brinjal",
              "displayName":"brinjal",
-            "old_Price": "40",
-            "new_Price": "50",
+            "oldPrice": "40",
+            "newPrice": "50",
             "quantity": "100grms",
             "count":0
         },
@@ -26,8 +26,8 @@
             "image": "Broclii",
             "title": "Broclii",
              "displayName":"broclii",
-            "old_Price": "70",
-            "new_Price": "60",
+            "oldPrice": "70",
+            "newPrice": "60",
             "quantity": "300grms",
             "count":0
         },
@@ -36,8 +36,8 @@
             "image": "Carrot",
             "title": "Carrot",
              "displayName":"carrot",
-            "old_Price": "90",
-            "new_Price": "70",
+            "oldPrice": "90",
+            "newPrice": "70",
             "quantity": "400grms",
             "count":0
         },
@@ -46,8 +46,8 @@
             "image": "Ladyf",
             "title": "Ladyf",
             "displayName":"ladyf",
-            "old_Price": "90",
-            "new_Price": "30",
+            "oldPrice": "90",
+            "newPrice": "30",
             "quantity": "400grms",
             "count":0
 
@@ -57,8 +57,8 @@
             "image": "Raddish",
             "title": "Raddish",
             "displayName":"raddish",
-            "old_Price": "50",
-            "new_Price": "70",
+            "oldPrice": "50",
+            "newPrice": "70",
             "quantity": "400grms",
             "count":0
         },
@@ -67,8 +67,8 @@
             "image": "Spinach",
             "title": "Spinach",
              "displayName":"spinach",
-            "old_Price": "90",
-            "new_Price": "70",
+            "oldPrice": "90",
+            "newPrice": "70",
             "quantity": "400grms",
             "count":0
         },
@@ -77,8 +77,8 @@
             "image": "Tomato",
             "title": "Tomato",
              "displayName":"tomato",
-            "old_Price": "90",
-            "new_Price": "70",
+            "oldPrice": "90",
+            "newPrice": "70",
             "quantity": "200grms",
             "count":0
         }
@@ -91,8 +91,8 @@
             "image": "Baby Butterhead lettuce",
             "title": "Baby Butterhead lettuce",
             "displayName":"baby_Butterheadlettuce",
-            "old_Price": "80",
-            "new_Price": "60",
+            "oldPrice": "80",
+            "newPrice": "60",
             "quantity": "500grms",
             "count":0
         },
@@ -101,8 +101,8 @@
             "image": "Rocket(Arugula)",
             "title": "Rocket(Arugula)",
             "displayName":"rocket(Arugula)",
-            "old_Price": "30",
-            "new_Price": "50",
+            "oldPrice": "30",
+            "newPrice": "50",
             "quantity": "100grms",
             "count":0
         },
@@ -111,8 +111,8 @@
             "image": "curry Leavs",
             "title": "curry Leavs",
             "displayName":"curry_Leavs",
-            "old_Price": "20",
-            "new_Price": "40",
+            "oldPrice": "20",
+            "newPrice": "40",
             "quantity": "100grms",
             "count":0
         },
@@ -121,8 +121,8 @@
             "image": "mint",
             "title": "mint",
             "displayName":"mint",
-            "old_Price": "40",
-            "new_Price": "50",
+            "oldPrice": "40",
+            "newPrice": "50",
             "quantity": "100grms",
             "count":0
         },
@@ -131,8 +131,8 @@
             "image": "Rocket(Arugula)",
             "title": "Rocket(Arugula)",
             "displayName":"rocket(Arugula)",
-            "old_Price": "60",
-            "new_Price": "30",
+            "oldPrice": "60",
+            "newPrice": "30",
             "quantity": "200grms",
             "count":0
         }
@@ -145,8 +145,8 @@
             "image": "broccolifloret",
             "title": "broccolifloret",
              "displayName":"broccoli_Floret",
-            "old_Price": "100",
-            "new_Price": "30",
+            "oldPrice": "100",
+            "newPrice": "30",
             "quantity": "100grms",
             "count":0
         },
@@ -155,8 +155,8 @@
             "image": "cabbagegreenshred",
             "title": "cabbagegreensshred",
             "displayName":"cabbage_Greensshred",
-            "old_Price": "100",
-            "new_Price": "30",
+            "oldPrice": "100",
+            "newPrice": "30",
             "quantity": "100grms",
             "count":0
         },
@@ -165,8 +165,8 @@
             "image": "cauliflowerfloret",
             "title": "cauliflowerfloret",
            "displayName":"cauliflower_Floret",
-            "old_Price": "20",
-            "new_Price": "40",
+            "oldPrice": "20",
+            "newPrice": "40",
             "quantity": "100grms",
             "count":0
         },
@@ -175,8 +175,8 @@
             "image": "garlicpeel",
             "title": "Garlicpeel",
             "displayName":"garlicpeel",
-            "old_Price": "40",
-            "new_Price": "50",
+            "oldPrice": "40",
+            "newPrice": "50",
             "quantity": "200grms",
             "count":0
         },
@@ -185,8 +185,8 @@
             "image": "greenpeaspeeled",
             "title": "greenpeaspeeled",
             "displayName":"greenpeasPeeled",
-            "old_Price": "60",
-            "new_Price": "30",
+            "oldPrice": "60",
+            "newPrice": "30",
             "quantity": "50grms",
             "count":0
         },
@@ -195,8 +195,8 @@
             "image": "pineapple-peeled & sliced",
             "title": "pineapple-peeled & sliced",
              "displayName":"pineapplesPeeled & sliced",
-            "old_Price": "70",
-            "new_Price": "100",
+            "oldPrice": "70",
+            "newPrice": "100",
             "quantity": "70grms",
             "count":0
         }
@@ -208,8 +208,8 @@
             "image": "cashewsclassic",
             "title": "cashewclassic",
             "displayName":"cashewClassic",
-            "old_Price": "300",
-            "new_Price": "400",
+            "oldPrice": "300",
+            "newPrice": "400",
             "quantity": "100grms",
             "count":0
         },
@@ -218,8 +218,8 @@
             "image": "Classic Almond-California",
             "title": "Classic Almond-California",
             "displayName":"classicAlmondCalifornia",
-            "old_Price": "200",
-            "new_Price": "350",
+            "oldPrice": "200",
+            "newPrice": "350",
             "quantity": "100grms",
             "count":0
         },
@@ -228,8 +228,8 @@
             "image": "pumpkinseeds",
             "title": "Pumpkinseed",
             "displayName":"pumpkinseed",
-            "old_Price": "100",
-            "new_Price": "120",
+            "oldPrice": "100",
+            "newPrice": "120",
             "quantity": "50grms",
             "count":0
         },
@@ -238,8 +238,8 @@
             "image": "raisinsblack",
             "title": "raisinsblack",
             "displayName":"raisinsblack",
-            "old_Price": "40",
-            "new_Price": "50",
+            "oldPrice": "40",
+            "newPrice": "50",
             "quantity": "200grms",
             "count":0
         },
@@ -248,8 +248,8 @@
             "image": "walnut",
             "title": "greenpeaspeeled",
            "displayName":"greenpeasPeeled",
-            "old_Price": "60",
-            "new_Price": "30",
+            "oldPrice": "60",
+            "newPrice": "30",
             "quantity": "50grms",
             "count":0
          } 

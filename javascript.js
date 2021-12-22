@@ -52,8 +52,8 @@ let Fn_Call=0;
                 <p style="display:"inline",float:"left"">${obj.displayName}</p>
                 <table class="table table-borderless ">
                 <tr>
-                <td style="text-align:"right;""><p style="text-align:end;"><span class="strike" style="text-align:"right;"">₹${obj["old_Price"]}</span></p></td>
-                <td> <p  ><strong>₹${obj["new_Price"]}</strong></p></td>
+                <td style="text-align:"right;""><p style="text-align:end;"><span class="strike" style="text-align:"right;"">₹${obj["oldPrice"]}</span></p></td>
+                <td> <p  ><strong>₹${obj["newPrice"]}</strong></p></td>
                 </tr>
                 </table>    
                 <p  style="display:"inline",text-align:"left";">${obj.quantity}</p>
