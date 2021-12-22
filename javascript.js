@@ -90,10 +90,14 @@ let Fn_Call=0;
                  });
                     selecedItems.push(gourment[opt][targetedButton.charAt(1)])
                     console.log(selecedItems);
+                      window.localStorage.removeItem("cartItems")
+                     window.localStorage.setItem("cartItems",JSON.stringify(selecedItems))
 
                 } else {
                     selecedItems.push(gourment[opt][targetedButton.charAt(1)])
                     console.log(selecedItems);
+                      window.localStorage.removeItem("cartItems")
+                     window.localStorage.setItem("cartItems",JSON.stringify(selecedItems))
               }
 
 
@@ -124,8 +128,9 @@ let Fn_Call=0;
 
                   selecedItems = selecedItems.filter(function( obj ) {
                  return obj.count !==0 
-                 });
-                     
+                  });
+                     window.localStorage.removeItem("cartItems")
+                     window.localStorage.setItem("cartItems",JSON.stringify(selecedItems))
                  console.log(selecedItems);
                 
                   }
@@ -139,6 +144,7 @@ let Fn_Call=0;
             sibling.style.display = 'flex';
             var itemC = document.getElementById(item.id).nextElementSibling.children[1];
             itemC.innerHTML = gourment[opt][item.id.charAt(4)].count;
+           
         }
         item.addEventListener('click', event => {
             var targetedButton = event.target.id;
@@ -157,14 +163,18 @@ let Fn_Call=0;
             return obj.title !== gourment[opt][targetedButton.charAt(4)].title;
              });
                 selecedItems.push(gourment[opt][targetedButton.charAt(4)])
+                window.localStorage.setItem("cartItems",selecedItems)
                 console.log(selecedItems);
 
             } else {
                 selecedItems.push(gourment[opt][targetedButton.charAt(4)])
                 console.log(selecedItems);
+                  window.localStorage.setItem("cartItems",JSON.stringify(selecedItems))
           }
             
         })
     })
 
 };
+
+
