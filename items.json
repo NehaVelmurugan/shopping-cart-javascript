@@ -1,0 +1,257 @@
+{
+    "vegetables" : [
+    
+        {
+            "category": "Organic",
+            "image": "Beans",
+            "title": "Beans",
+             "displayName":"beans",
+            "oldPrice": "80",
+            "newPrice": "60",
+            "quantity": "500grms",
+            "count":0
+        },
+        {
+            "category": "Organic",
+            "image": "Brinjal",
+            "title": "Brinjal",
+             "displayName":"brinjal",
+            "oldPrice": "40",
+            "newPrice": "50",
+            "quantity": "100grms",
+            "count":0
+        },
+        {
+            "category": "Organic",
+            "image": "Broclii",
+            "title": "Broclii",
+             "displayName":"broclii",
+            "oldPrice": "70",
+            "newPrice": "60",
+            "quantity": "300grms",
+            "count":0
+        },
+        {
+            "category": "Organic",
+            "image": "Carrot",
+            "title": "Carrot",
+             "displayName":"carrot",
+            "oldPrice": "90",
+            "newPrice": "70",
+            "quantity": "400grms",
+            "count":0
+        },
+        {
+            "category": "Organic",
+            "image": "Ladyf",
+            "title": "Ladyf",
+            "displayName":"ladyf",
+            "oldPrice": "90",
+            "newPrice": "30",
+            "quantity": "400grms",
+            "count":0
+
+        },
+        {
+            "category": "Organic",
+            "image": "Raddish",
+            "title": "Raddish",
+            "displayName":"raddish",
+            "oldPrice": "50",
+            "newPrice": "70",
+            "quantity": "400grms",
+            "count":0
+        },
+        {
+            "category": "Organic",
+            "image": "Spinach",
+            "title": "Spinach",
+             "displayName":"spinach",
+            "oldPrice": "90",
+            "newPrice": "70",
+            "quantity": "400grms",
+            "count":0
+        },
+        {
+            "category": "Organic",
+            "image": "Tomato",
+            "title": "Tomato",
+             "displayName":"tomato",
+            "oldPrice": "90",
+            "newPrice": "70",
+            "quantity": "200grms",
+            "count":0
+        }
+    ],
+
+"leafyGreen":[
+
+        {
+            "category": "Organic",
+            "image": "Baby Butterhead lettuce",
+            "title": "Baby Butterhead lettuce",
+            "displayName":"baby_Butterheadlettuce",
+            "oldPrice": "80",
+            "newPrice": "60",
+            "quantity": "500grms",
+            "count":0
+        },
+        {
+            "category": "Organic",
+            "image": "Rocket(Arugula)",
+            "title": "Rocket(Arugula)",
+            "displayName":"rocket(Arugula)",
+            "oldPrice": "30",
+            "newPrice": "50",
+            "quantity": "100grms",
+            "count":0
+        },
+        {
+            "category": "Organic",
+            "image": "curry Leavs",
+            "title": "curry Leavs",
+            "displayName":"curry_Leavs",
+            "oldPrice": "20",
+            "newPrice": "40",
+            "quantity": "100grms",
+            "count":0
+        },
+        {
+            "category": "Organic",
+            "image": "mint",
+            "title": "mint",
+            "displayName":"mint",
+            "oldPrice": "40",
+            "newPrice": "50",
+            "quantity": "100grms",
+            "count":0
+        },
+        {
+            "category": "Organic",
+            "image": "Rocket(Arugula)",
+            "title": "Rocket(Arugula)",
+            "displayName":"rocket(Arugula)",
+            "oldPrice": "60",
+            "newPrice": "30",
+            "quantity": "200grms",
+            "count":0
+        }
+    ],
+
+   "freshlyCut":[
+       
+        {
+            "category": "Organic",
+            "image": "broccolifloret",
+            "title": "broccolifloret",
+             "displayName":"broccoli_Floret",
+            "oldPrice": "100",
+            "newPrice": "30",
+            "quantity": "100grms",
+            "count":0
+        },
+        {
+            "category": "Organic",
+            "image": "cabbagegreenshred",
+            "title": "cabbagegreensshred",
+            "displayName":"cabbage_Greensshred",
+            "oldPrice": "100",
+            "newPrice": "30",
+            "quantity": "100grms",
+            "count":0
+        },
+        {
+            "category": "Organic",
+            "image": "cauliflowerfloret",
+            "title": "cauliflowerfloret",
+           "displayName":"cauliflower_Floret",
+            "oldPrice": "20",
+            "newPrice": "40",
+            "quantity": "100grms",
+            "count":0
+        },
+        {
+            "category": "Organic",
+            "image": "garlicpeel",
+            "title": "Garlicpeel",
+            "displayName":"garlicpeel",
+            "oldPrice": "40",
+            "newPrice": "50",
+            "quantity": "200grms",
+            "count":0
+        },
+        {
+            "category": "Organic",
+            "image": "greenpeaspeeled",
+            "title": "greenpeaspeeled",
+            "displayName":"greenpeasPeeled",
+            "oldPrice": "60",
+            "newPrice": "30",
+            "quantity": "50grms",
+            "count":0
+        },
+        {
+            "category": "Organic",
+            "image": "pineapple-peeled & sliced",
+            "title": "pineapple-peeled & sliced",
+             "displayName":"pineapplesPeeled & sliced",
+            "oldPrice": "70",
+            "newPrice": "100",
+            "quantity": "70grms",
+            "count":0
+        }
+    ],
+    "dryFruits":[
+       
+        {
+            "category": "Organic",
+            "image": "cashewsclassic",
+            "title": "cashewclassic",
+            "displayName":"cashewClassic",
+            "oldPrice": "300",
+            "newPrice": "400",
+            "quantity": "100grms",
+            "count":0
+        },
+        {
+            "category": "Organic",
+            "image": "Classic Almond-California",
+            "title": "Classic Almond-California",
+            "displayName":"classicAlmondCalifornia",
+            "oldPrice": "200",
+            "newPrice": "350",
+            "quantity": "100grms",
+            "count":0
+        },
+        {
+            "category": "Organic",
+            "image": "pumpkinseeds",
+            "title": "Pumpkinseed",
+            "displayName":"pumpkinseed",
+            "oldPrice": "100",
+            "newPrice": "120",
+            "quantity": "50grms",
+            "count":0
+        },
+        {
+            "category": "Organic",
+            "image": "raisinsblack",
+            "title": "raisinsblack",
+            "displayName":"raisinsblack",
+            "oldPrice": "40",
+            "newPrice": "50",
+            "quantity": "200grms",
+            "count":0
+        },
+        {
+            "category": "Organic",
+            "image": "walnut",
+            "title": "greenpeaspeeled",
+           "displayName":"greenpeasPeeled",
+            "oldPrice": "60",
+            "newPrice": "30",
+            "quantity": "50grms",
+            "count":0
+         } 
+    ]
+}

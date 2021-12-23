@@ -1,273 +1,47 @@
-﻿
-let Gourment = {
-    vegetables :[
-        /* Defining Arrays named vegetables*/
-        {
-            "category": "Organic",
-            "image": "Beans",
-            "title": "Beans",
-             "displayName":"beans",
-            "old-price": "80",
-            "new-price": "60",
-            "quantity": "500grms",
-           "count":0
-        },
-        {
-            "category": "Organic",
-            "image": "Brinjal",
-            "title": "Brinjal",
-             "displayName":"brinjal",
-            "old-price": "40",
-            "new-price": "50",
-            "quantity": "100grms",
-            "count":0
-        },
-        {
-            "category": "Organic",
-            "image": "Broclii",
-            "title": "Broclii",
-             "displayName":"broclii",
-            "old-price": "70",
-            "new-price": "60",
-            "quantity": "300grms",
-            "count":0
-        },
-        {
-            "category": "Organic",
-            "image": "Carrot",
-            "title": "Carrot",
-             "displayName":"Carrot",
-            "old-price": "90",
-            "new-price": "70",
-            "quantity": "400grms",
-            "count":0
-        },
-        {
-            "category": "Organic",
-            "image": "Ladyf",
-            "title": "Ladyf",
-            "displayName":"ladyf",
-            "old-price": "90",
-            "new-price": "30",
-            "quantity": "400grms",
-            "count":0
-
-        },
-        {
-            "category": "Organic",
-            "image": "Raddish",
-            "title": "Raddish",
-            "displayName":"raddish",
-            "old-price": "50",
-            "new-price": "70",
-            "quantity": "400grms",
-            "count":0
-        },
-        {
-            "category": "Organic",
-            "image": "Spinach",
-            "title": "Spinach",
-             "displayName":"spinach",
-            "old-price": "90",
-            "new-price": "70",
-            "quantity": "400grms",
-            "count":0
-        },
-        {
-            "category": "Organic",
-            "image": "Tomato",
-            "title": "Tomato",
-             "displayName":"tomato",
-            "old-price": "90",
-            "new-price": "70",
-            "quantity": "200grms",
-            "count":0
-        },
-    ],
-
-    leafyGreen:[
-        /* Defining Arrays named Leafy_green*/
-        {
-            "category": "Organic",
-            "image": "Baby Butterhead lettuce",
-            "title": "Baby Butterhead lettuce",
-            "displayName":"Baby Butterhead lettuce",
-            "old-price": "80",
-            "new-price": "60",
-            "quantity": "500grms",
-            "count":0
-        },
-        {
-            "category": "Organic",
-            "image": "Rocket(Arugula)",
-            "title": "Rocket(Arugula)",
-            "displayName":"Rocket(Arugula)",
-            "old-price": "30",
-            "new-price": "50",
-            "quantity": "100grms",
-            "count":0
-        },
-        {
-            "category": "Organic",
-            "image": "curry Leavs",
-            "title": "curry Leavs",
-            "displayName":"curry Leavs",
-            "old-price": "20",
-            "new-price": "40",
-            "quantity": "100grms",
-            "count":0
-        },
-        {
-            "category": "Organic",
-            "image": "mint",
-            "title": "mint",
-            "displayName":"mint",
-            "old-price": "40",
-            "new-price": "50",
-            "quantity": "100grms",
-            "count":0
-        },
-        {
-            "category": "Organic",
-            "image": "Rocket(Arugula)",
-            "title": "Rocket(Arugula)",
-            "displayName":"Rocket(Arugula)",
-            "old-price": "60",
-            "new-price": "30",
-            "quantity": "200grms",
-            "count":0
-        },
-    ],
-
-    freshlyCut:[
-        /* Defining Arrays named Freshlycut*/
-        {
-            "category": "Organic",
-            "image": "broccolifloret",
-            "title": "broccolifloret",
-             "displayName":"broccoliFloret",
-            "old-price": "100",
-            "new-price": "30",
-            "quantity": "100grms",
-            "count":0
-        },
-        {
-            "category": "Organic",
-            "image": "cabbagegreenshred",
-            "title": "cabbagegreensshred",
-            "displayName":"cabbagegreensshred",
-            "old-price": "100",
-            "new-price": "30",
-            "quantity": "100grms",
-            "count":0
-        },
-        {
-            "category": "Organic",
-            "image": "cauliflowerfloret",
-            "title": "cauliflowerfloret",
-           "displayName":"cauliflowerFloret",
-            "old-price": "20",
-            "new-price": "40",
-            "quantity": "100grms",
-            "count":0
-        },
-        {
-            "category": "Organic",
-            "image": "garlicpeel",
-            "title": "Garlicpeel",
-            "displayName":"garlicpeel",
-            "old-price": "40",
-            "new-price": "50",
-            "quantity": "200grms",
-            "count":0
-        },
-        {
-            "category": "Organic",
-            "image": "greenpeaspeeled",
-            "title": "greenpeaspeeled",
-            "displayName":"greenpeasPeeled",
-            "old-price": "60",
-            "new-price": "30",
-            "quantity": "50grms",
-            "count":0
-        },
-        {
-            "category": "Organic",
-            "image": "pineapple-peeled & sliced",
-            "title": "pineapple-peeled & sliced",
-             "displayName":"pineapplesPeeled & sliced",
-            "old-price": "70",
-            "new-price": "100",
-            "quantity": "70grms",
-            "count":0
-        },
-    ],
-    dryFruits:[
-        /* Defining Arrays named Dry_Fruits*/
-        {
-            "category": "Organic",
-            "image": "cashewsclassic",
-            "title": "cashewclassic",
-             "displayName":"cashewClassic",
-            "old-price": "300",
-            "new-price": "400",
-            "quantity": "100grms",
-            "count":0
-        },
-        {
-            "category": "Organic",
-            "image": "Classic Almond-California",
-            "title": "Classic Almond-California",
-             " displayName":"classicAlmond California",
-            "old-price": "200",
-            "new-price": "350",
-            "quantity": "100grms",
-            "count":0
-        },
-        {
-            "category": "Organic",
-            "image": "pumpkinseeds",
-            "title": "Pumpkinseed",
-            " displayName":"pumpkinseed",
-            "old-price": "100",
-            "new-price": "120",
-            "quantity": "50grms",
-            "count":0
-        },
-        {
-            "category": "Organic",
-            "image": "raisinsblack",
-            "title": "raisinsblack",
-            " displayName":"raisinsblack",
-            "old-price": "40",
-            "new-price": "50",
-            "quantity": "200grms",
-            "count":0
-        },
-        {
-            "category": "Organic",
-            "image": "walnut",
-            "title": "greenpeaspeeled",
-           " displayName":"greenpeas peeled",
-            "old-price": "60",
-            "new-price": "30",
-            "quantity": "50grms",
-            "count":0
-        },
-    ]
+﻿let gourment = {}
+const getJsonFile = () => {
+    fetch("./items.json").then(async response => {
+      try {
+       const data = await response.json()
+          console.log('response data?', data)
+          gourment= data
+         
+     } catch(error) {
+       console.log('Error happened here!')
+       console.error(error)
+     }
+    })
     
-};
+}
 
+ function onLoad(){
+ fetch("./items.json").then(async response => {
+      try {
+       const data = await response.json()
+          console.log('response data?', data)
+          gourment = data
+          
+         loded('vegetables') 
+         
+     } catch(error) {
+       console.log('Error happened here!')
+       console.error(error)
+     }
+    })
+
+  
+}
+  
 let selecedItems=[]
-
 let itemCount = 0; 
 let cartCount=0;/*Keep Track of Cart_Count*/
-function loded(opt)
+let Fn_Call=0;
+ function loded(opt)
 
-{  
-    console.log(opt,Gourment[opt])
+{
+     console.log(opt, gourment[opt])
      document.querySelector('.container').innerHTML="";/* Clear the Screen Before proceeding to next Screen*/
-     Gourment[opt].forEach((obj,index)=>{
+     gourment[opt].forEach((obj,index)=>{
        console.log(obj);
        let html=`
        <div id="${index}" class="p-2 col-xl-3 col-lg-3 col-md-4 col-sm-6 col-xs-12" >
@@ -278,8 +52,8 @@ function loded(opt)
                 <p style="display:"inline",float:"left"">${obj.displayName}</p>
                 <table class="table table-borderless ">
                 <tr>
-                <td style="text-align:"right;""><p style="text-align:end;"><span class="strike" style="text-align:"right;"">₹${obj["old-price"]}</span></p></td>
-                <td> <p  ><strong>₹${obj["new-price"]}</strong></p></td>
+                <td style="text-align:"right;""><p style="text-align:end;"><span class="strike" style="text-align:"right;"">₹${obj["oldPrice"]}</span></p></td>
+                <td> <p  ><strong>₹${obj["newPrice"]}</strong></p></td>
                 </tr>
                 </table>    
                 <p  style="display:"inline",text-align:"left";">${obj.quantity}</p>
@@ -298,27 +72,32 @@ function loded(opt)
            .insertAdjacentHTML('afterbegin', html);
      })
         document.querySelectorAll(".plus_minus_btn").forEach((item) => {
-        item.addEventListener('click', event => {
+            item.addEventListener('click', event => {
+         
+
             var targetedButton = event.target.id;
             if (targetedButton.charAt(0) == "+") {
                 var itemC = document.getElementById(targetedButton).previousElementSibling;
                 itemCount = itemC.innerHTML;
-                itemCount++;
+                cop_item=++itemCount;
+                // console.log(cop_item);
                 itemC.innerHTML = itemCount;
-                console.log(itemCount);
-                 console.log(typeof(itemCount));
           //increse count when we add element to cart and push if it is not persent in the selected list,,,,,, if item is already present in selected array then increase count           
-                Gourment[opt][targetedButton.charAt(1)].count = Gourment[opt][targetedButton.charAt(1)].count + 1;
-                if (selecedItems.some(elem => elem.title === Gourment[opt][targetedButton.charAt(1)].title)) {
+                gourment[opt][targetedButton.charAt(1)].count = gourment[opt][targetedButton.charAt(1)].count + 1;
+                if (selecedItems.some(elem => elem.title === gourment[opt][targetedButton.charAt(1)].title)) {
                  selecedItems = selecedItems.filter(function( obj ) {
-                return obj.title !== Gourment[opt][targetedButton.charAt(1)].title;
+                return obj.title !== gourment[opt][targetedButton.charAt(1)].title;
                  });
-                    selecedItems.push(Gourment[opt][targetedButton.charAt(1)])
+                    selecedItems.push(gourment[opt][targetedButton.charAt(1)])
                     console.log(selecedItems);
+                      window.localStorage.removeItem("cartItems")
+                     window.localStorage.setItem("cartItems",JSON.stringify(selecedItems))
 
                 } else {
-                    selecedItems.push(Gourment[opt][targetedButton.charAt(1)])
+                    selecedItems.push(gourment[opt][targetedButton.charAt(1)])
                     console.log(selecedItems);
+                      window.localStorage.removeItem("cartItems")
+                     window.localStorage.setItem("cartItems",JSON.stringify(selecedItems))
               }
 
 
@@ -332,49 +111,70 @@ function loded(opt)
                     document.getElementById(targetedButton).parentElement.previousElementSibling.style.display = "block";
                 }
                 itemC.innerHTML = itemCount;
+                cop_item=itemCount;
                 if(itemCount==0){
                 document.getElementById("checkoutCart").innerHTML = --cartCount;
                 }
                 //decrase the count in the gourment array and put the new obj with update count into selected items and if count is equal to zero remove the object from selected Items
-                 Gourment[opt][targetedButton.charAt(1)].count = Gourment[opt][targetedButton.charAt(1)].count - 1;
+                 gourment[opt][targetedButton.charAt(1)].count = gourment[opt][targetedButton.charAt(1)].count - 1;
              
                 
-                 if (selecedItems.some(elem => elem.title === Gourment[opt][targetedButton.charAt(1)].title)) {
+                 if (selecedItems.some(elem => elem.title === gourment[opt][targetedButton.charAt(1)].title)) {
                  selecedItems = selecedItems.filter(function( obj ) {
-                return obj.title !== Gourment[opt][targetedButton.charAt(1)].title;
+                return obj.title !== gourment[opt][targetedButton.charAt(1)].title;
                  });
-                    selecedItems.push(Gourment[opt][targetedButton.charAt(1)])
+                    selecedItems.push(gourment[opt][targetedButton.charAt(1)])
                     }
 
                   selecedItems = selecedItems.filter(function( obj ) {
                  return obj.count !==0 
-                 });
-                     
+                  });
+                     window.localStorage.removeItem("cartItems")
+                     window.localStorage.setItem("cartItems",JSON.stringify(selecedItems))
                  console.log(selecedItems);
                 
                   }
         })
     })
-
     document.querySelectorAll(".Btn_Cart").forEach((item) => {
+        /*Keeps Track of Button Status when Already Selected*/
+        if (gourment[opt][item.id.charAt(4)].count > 0) {
+            document.getElementById(item.id).style.display = 'none';
+             var sibling = document.getElementById(item.id).nextElementSibling;
+            sibling.style.display = 'flex';
+            var itemC = document.getElementById(item.id).nextElementSibling.children[1];
+            itemC.innerHTML = gourment[opt][item.id.charAt(4)].count;
+           
+        }
         item.addEventListener('click', event => {
             var targetedButton = event.target.id;
             var sibling = document.getElementById(targetedButton).nextElementSibling;
             sibling.style.display = 'flex';
-            
             document.getElementById(targetedButton).style.display = 'none';
-
             var itemC = document.getElementById(targetedButton).nextElementSibling.children[1];
             itemCount = itemC.innerHTML;
             itemCount++;
-            itemC.innerHTML = 0;
-            document.getElementById("checkoutCart").innerHTML = ++cartCount;   
+            itemC.innerHTML = gourment[opt][targetedButton.charAt(4)].count+1;
+            document.getElementById("checkoutCart").innerHTML = ++cartCount; 
+            gourment[opt][targetedButton.charAt(4)].count=gourment[opt][targetedButton.charAt(4)].count+1;
+            if (selecedItems.some(elem => elem.title === gourment[opt][targetedButton.charAt(4)].title)) {
+                
+             selecedItems = selecedItems.filter(function( obj ) {
+            return obj.title !== gourment[opt][targetedButton.charAt(4)].title;
+             });
+                selecedItems.push(gourment[opt][targetedButton.charAt(4)])
+                window.localStorage.setItem("cartItems",selecedItems)
+                console.log(selecedItems);
+
+            } else {
+                selecedItems.push(gourment[opt][targetedButton.charAt(4)])
+                console.log(selecedItems);
+                  window.localStorage.setItem("cartItems",JSON.stringify(selecedItems))
+          }
             
         })
     })
 
 };
-
-
 
 
