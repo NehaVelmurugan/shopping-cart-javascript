@@ -19,6 +19,7 @@ console.log(selecedItems);
       try {
         const data = await response.json();
         gourment = data;
+        
         loded('vegetables');
          
      } catch(error) {
@@ -30,16 +31,32 @@ console.log(selecedItems);
   
 }
   
-let selecedItems = []
+let selecedItems = [];
 let itemCount = 0; 
-let cartCount=0;/*Keep Track of Cart_Count*/
-let Fn_Call = 0;
-
-
+let cartCount=selecedItems.length;/*Keep Track of Cart_Count*/
+let functionCall = 0;
+//  let cartReflect
  function loded(opt)
-
- {
-             
+ {  
+    if(!!window.localStorage.getItem("cartItems"))
+   { console.log(JSON.parse(window.localStorage.getItem("cartItems")))
+    selecedItems = [...JSON.parse(window.localStorage.getItem("cartItems"))];
+      console.log(selecedItems);
+     }
+  //   cartReflect = JSON.parse(window.localStorage.getItem("cartItems"))
+  //  let category=gourment[opt]
+  //  console.log(cartReflect);
+  //  if (cartReflect.length > 0) {
+     
+  // cartReflect.forEach(element => {
+  //           const itemIndex = category.findIndex(o => o.title === element.title);
+  //           if(itemIndex > -1) {
+  //               category[itemIndex] = element;
+  //           }    
+  //       });
+     
+  //  }
+    document.getElementById("checkoutCart").innerHTML=selecedItems.length
      console.log(opt, gourment[opt])
      document.querySelector('.container').innerHTML="";/* Clear the Screen Before proceeding to next Screen*/
      gourment[opt].forEach((obj,index)=>{
@@ -68,13 +85,12 @@ let Fn_Call = 0;
                 </div>
                 </div>
             </div>`
-            
+ 
            document.querySelector('.container')
            .insertAdjacentHTML('afterbegin', html);
      })
         document.querySelectorAll(".plus_minus_btn").forEach((item) => {
             item.addEventListener('click', event => {
-         
 
             var targetedButton = event.target.id;
             if (targetedButton.charAt(0) == "+") {
@@ -92,6 +108,7 @@ let Fn_Call = 0;
                     selecedItems.push(gourment[opt][targetedButton.charAt(1)])
                     console.log(selecedItems);
                       window.localStorage.removeItem("cartItems")
+                  
                   window.localStorage.setItem("cartItems", JSON.stringify(selecedItems))
           
 
@@ -112,7 +129,8 @@ let Fn_Call = 0;
                 if (itemCount == 0) {
                     document.getElementById(targetedButton).parentElement.style.display = "none";
                     document.getElementById(targetedButton).parentElement.previousElementSibling.style.display = "block";
-                }
+              }
+              
                 itemC.innerHTML = itemCount;
                 cop_item=itemCount;
                 if(itemCount==0){
@@ -166,7 +184,7 @@ let Fn_Call = 0;
             return obj.title !== gourment[opt][targetedButton.charAt(4)].title;
              });
                 selecedItems.push(gourment[opt][targetedButton.charAt(4)])
-                window.localStorage.setItem("cartItems",selecedItems)
+                window.localStorage.setItem("cartItems",JSON.stringify(selecedItems))
                 console.log(selecedItems);
 
             } else {
