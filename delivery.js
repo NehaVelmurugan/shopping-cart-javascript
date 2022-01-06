@@ -87,7 +87,7 @@ class FormValidation{
     alertMessage(){
         const {usernameErr , emailErr , phonenumberErr , AddressErr}= this.errorValues
         if(usernameErr === "" && emailErr === "" && phonenumberErr === "" && AddressErr === ""){
-            swal("UserDetails Successful","ThankYou , "+this.formValues.username,"success").then(() => {
+            swal("User Details Successful","ThankYou , "+this.formValues.username,"success").then(() => {
                 console.log(this.formValues)
                 this.removeInputs()
             })
