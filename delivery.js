@@ -3,13 +3,13 @@ class FormValidation{
         username : "",
         email : "",
         phonenumber : "",
-        password : ""
+        Address: ""
     }
     errorValues = {
         usernameErr : "",
         emailErr : "",
         phonenumberErr : "",
-        passwordErr : ""
+        AddressErr : ""
     }
     showErrorMsg(index,msg){
         const form_group = document.getElementsByClassName('form-group')[index]
@@ -25,14 +25,14 @@ class FormValidation{
         this.formValues.username = document.getElementById('username').value.trim()
         this.formValues.email = document.getElementById('email').value.trim()
         this.formValues.phonenumber = document.getElementById('phonenumber').value.trim()
-        this.formValues.password = document.getElementById('password').value.trim()
+        this.formValues.Address = document.getElementById('Address').value.trim()
     }
     validateUsername(){
         if(this.formValues.username === ""){
             this.errorValues.usernameErr = "* Please Enter Your Name"
             this.showErrorMsg(0,this.errorValues.usernameErr)
-        } else if(this.formValues.username.length <= 4 ){
-            this.errorValues.usernameErr = "* Username must be atleast 5 Characters"
+        } else if(this.formValues.username.length <= 2 ){
+            this.errorValues.usernameErr = "* Username must be atleast 2 Characters"
             this.showErrorMsg(0,this.errorValues.usernameErr)
         } else if(this.formValues.username.length > 14){
             this.errorValues.usernameErr = "* Username should not exceeds 14 Characters"
@@ -69,24 +69,24 @@ class FormValidation{
            this.showErrorMsg(2,this.errorValues.phonenumberErr)
        }
     }
-    validatePassword(){
-        if(this.formValues.password === ""){
-            this.errorValues.passwordErr = "* Please Provide a Password"
-            this.showErrorMsg(3,this.errorValues.passwordErr)
-        } else if(this.formValues.password.length <= 4){
-            this.errorValues.passwordErr = "* Password must be atleast 5 Characters"
-            this.showErrorMsg(3,this.errorValues.passwordErr)
-        } else if(this.formValues.password.length > 10){
-            this.errorValues.passwordErr = "* Password should not exceeds 10 Characters"
-            this.showErrorMsg(3,this.errorValues.passwordErr)
+    validateAddress(){
+        if(this.formValues.Address === ""){
+            this.errorValues.AddressErr = "* Please Provide a Addresss"
+            this.showErrorMsg(3,this.errorValues.AddressErr)
+        } else if(this.formValues.Address.length <= 2){
+            this.errorValues.AddressErr = "* address  1 characters  mandatory"
+            this.showErrorMsg(3,this.errorValues.AddressErr)
+        } else if(this.formValues.Address.length > 50){
+            this.errorValues.AddressErr = "* Address should not exceeds 50 Characters"
+            this.showErrorMsg(3,this.errorValues.AddressErr)
         } else {
-            this.errorValues.passwordErr = ""
+            this.errorValues.AddressErr = ""
             this.showSuccessMsg(3)
         }
     }
     alertMessage(){
-        const {usernameErr , emailErr , phonenumberErr , passwordErr , confirmpasswordErr}= this.errorValues
-        if(usernameErr === "" && emailErr === "" && phonenumberErr === "" && passwordErr === ""){
+        const {usernameErr , emailErr , phonenumberErr , AddressErr}= this.errorValues
+        if(usernameErr === "" && emailErr === "" && phonenumberErr === "" && AddressErr === ""){
             swal("UserDetails Successful","ThankYou , "+this.formValues.username,"success").then(() => {
                 console.log(this.formValues)
                 this.removeInputs()
@@ -114,7 +114,7 @@ document.getElementsByClassName('form')[0].addEventListener('submit' , event => 
     ValidateUserInputs.validateUsername()
     ValidateUserInputs.validateEmail()
     ValidateUserInputs.validatePhonenumber()
-    ValidateUserInputs.validatePassword()
+    ValidateUserInputs.validateAddress()
     ValidateUserInputs.alertMessage()
 })
 
